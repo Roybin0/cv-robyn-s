@@ -104,5 +104,14 @@ header {
     letter-spacing: 2px;
 }
 
-/* --- Colors --- */ 
+#nav {
+    margin: 0;
+}
+
+/* --- hover.css --- */
+
+.hvr-sweep-to-bottom:before {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 120px;
+}
 
