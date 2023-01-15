@@ -16,7 +16,6 @@
     <script type="text/javascript">
         (function(){
             emailjs.init("DX_Uv03oANSKy1cu6");
-            emailjs.send("service_pa4u1tj", "resume00", {name: "Robyn", notes: "The project that I want is..."});
         })();
     </script>
 </head>
@@ -68,10 +67,10 @@
                 <h5 class="uppercase text-center">Let's work together!</h5>
 
                 <div class="center-form">
-                    <form action="">
+                    <form onsubmit="return sendMail(this);">
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name"
                         required />
-                        <input type="text" name="email" id="emailaddress" class="form-control" placeholder="Email address"
+                        <input type="text" name="emailaddress" id="emailaddress" class="form-control" placeholder="Email address"
                         required />
                         <textarea name="projectsummary" id="projectsummary" rows="5" class="form-control" placeholder="Project description" 
                         required></textarea>
@@ -137,6 +136,8 @@
         </div>
 
     </footer>
+
+    <script src="/assets/js/sendemail.js"></script>
 
     <script src="https://kit.fontawesome.com/c1ba389408.js" crossorigin="anonymous"></script>
     
